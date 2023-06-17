@@ -1,6 +1,10 @@
 body {
     /* background-color: black; */
-    background-image: url("https://media.giphy.com/media/YpMYUdwJvFkkd5lL1q/giphy.gif");
+    
+    /* background-image: url("https://media.giphy.com/media/YpMYUdwJvFkkd5lL1q/giphy.gif"); */
+
+    background-image: url("https://media.giphy.com/media/xTiTniuHdUjpOlNo1q/giphy.gif");
+    background-size: cover;
     color: white;
     font-family: Arial, sans-serif;
     padding-top: 20px;
