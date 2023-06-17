@@ -1,0 +1,36 @@
+<body>
+
+<div class="home-container">
+    <section class="welcome-section">
+      <div class="welcome-container">
+        <h1>Welcome to the Music Website!</h1>
+        <p>Discover and enjoy your favorite music.</p>
+        <button class="btn-get-started" routerLink="/register">Get Started</button>
+      </div>
+    </section>
+  <br>
+    <section class="slideshow-section">
+        <h3>Check out the new releases...</h3>
+      <div class="slideshow-container">
+        <div class="slideshow">
+          <div *ngFor="let song of newReleasedSongs; let i = index" class="slide" [class.active]="i === slideIndex">
+            <img class="slide-image" [src]="song.imageUrl" [alt]="song.title">
+            <div class="slide-content">
+              <h3>{{ song.title }}</h3>
+              <p>{{ song.artist }}</p>
+            </div>
+          </div>
+        </div>
+  
+        <a class="carousel-control-prev" href="#" role="button" (click)="previousSlide()">
+          <span class="carousel-control-prev-icon"></span>
+        </a>
+        <a class="carousel-control-next" href="#" role="button" (click)="nextSlide()">
+          <span class="carousel-control-next-icon"></span>
+        </a>
+      </div>
+    </section>
+  </div>
+  
+
+</body>

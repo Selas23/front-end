@@ -1,0 +1,123 @@
+body{
+    background-color: #000000;
+    color: #ffffff;
+    margin: 0;
+    padding: 0;
+}
+
+.home-container {
+    /* padding: 20px; */
+    background-color: #000000;
+    /* color: #ffffff; */
+    /* color: black; */
+  }
+  
+  .welcome-section {
+    /* background-color: #1a1a1a;
+    padding: 50px; */
+    /* background-color: #222222; */
+    /* background-image: url("https://media.giphy.com/media/ehssta24116nk9VWyN/giphy-downsized-large.gif"); */
+    background-image: url("https://media.giphy.com/media/gFhZjOtzoutSvckWPM/giphy.gif");
+    background-size: cover;
+    padding: 150px;
+  }
+  
+  .welcome-container {
+    text-align: center;
+  }
+  
+  .welcome-container h1 {
+    color: white;
+    font-size: 32px;
+  }
+  
+  .welcome-container p {
+    color: white;
+    font-size: 18px;
+  }
+  
+  .btn-get-started {
+    background-color: #ff8800;
+    color: white;
+    padding: 12px 24px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .btn-get-started:hover {
+    background-color: #e67600;
+  }
+  
+  .slideshow-section {
+    /* background-color: #1a1a1a;
+    padding: 50px; */
+    padding: 50px;
+  }
+  
+  .slideshow-container {
+    position: relative;
+    overflow: hidden;
+  }
+  
+  .slideshow {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+  }
+  
+  .slide {
+    flex: 0 0 100%;
+    max-width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out;
+  }
+  
+  .slide.active {
+    opacity: 1;
+  }
+  
+  .slide-image {
+    max-width: 100%;
+    height: auto;
+  }
+  
+  .slide-content {
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    color: white;
+  }
+  
+  .slide-content h3 {
+    margin: 0;
+    font-size: 24px;
+    font-weight: bold;
+  }
+  
+  .slide-content p {
+    margin: 0;
+    font-size: 16px;
+  }
+  
+  .carousel-control-prev,
+  .carousel-control-next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 32px;
+    color: white;
+    text-decoration: none;
+    cursor: pointer;
+  }
+  
+  .carousel-control-prev {
+    left: 20px;
+  }
+  
+  .carousel-control-next {
+    right: 20px;
+  }
+  
